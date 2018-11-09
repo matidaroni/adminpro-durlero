@@ -7,9 +7,13 @@ import { PagesComponent } from './pages.component';
 
 // Modules
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
+
+// temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
 
 @NgModule({
@@ -17,7 +21,8 @@ import { PAGES_ROUTES } from './pages.routes';
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        IncrementadorComponent
     ],
     exports: [
         PagesComponent,
@@ -27,7 +32,8 @@ import { PAGES_ROUTES } from './pages.routes';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 

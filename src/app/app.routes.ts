@@ -7,6 +7,7 @@ import { RegisterComponent } from './login/register.component';
 
 
 const appRoutes: Routes = [
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', component: NopagefoundComponent },
